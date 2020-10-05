@@ -11,7 +11,9 @@ RUN rm -rf /var/www/html
 #Quando o nginx apontar para html direciona para public
 RUN ln -s public html
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+#RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+COPY . /var/www
 
 EXPOSE 9000
 
