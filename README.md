@@ -1,1 +1,1 @@
-Imagem Docker Hub (App): https://hub.docker.com/repository/docker/robsantossilva/imagem_laravel
+Imagem Docker Hub (App): https://hub.docker.com/r/robsantossilva/imagem_laravel
