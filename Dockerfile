@@ -15,6 +15,11 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 COPY . /var/www
 
+RUN cp .env.example .env
+RUN composer install
+RUN php artisan key:generate
+RUN chmod -R 777 storage
+
 EXPOSE 9000
 
 ENTRYPOINT [ "php-fpm" ]
